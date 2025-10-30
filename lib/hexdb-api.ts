@@ -192,7 +192,7 @@ class HexDBAPI {
       
       // Military Aircraft
       'KC135': 'KC135', 'C17': 'C17', 'C5': 'C5', 'KC10': 'KC10', 'KC46': 'KC46',
-      'A400': 'A400M', 'C295': 'C295', 'CN35': 'CN235', 'C212': 'C212',
+      'C295': 'C295', 'CN35': 'CN235', 'C212': 'C212',
       
       // Special Operations Aircraft
       'V22': 'V22', 'MV22': 'MV22', 'CV22': 'CV22', 'C27J': 'C27J',

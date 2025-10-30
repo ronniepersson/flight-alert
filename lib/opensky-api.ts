@@ -283,7 +283,6 @@ export const AIRCRAFT_MODELS: Record<string, { name: string; icao24Prefixes: str
   'C5': { name: 'Lockheed C-5 Galaxy', icao24Prefixes: ['C5'] },
   'KC10': { name: 'McDonnell Douglas KC-10 Extender', icao24Prefixes: ['KC10', 'DC10'] },
   'KC46': { name: 'Boeing KC-46 Pegasus', icao24Prefixes: ['KC46'] },
-  'A400M': { name: 'Airbus A400M Atlas', icao24Prefixes: ['A400'] },
   'A330MRTT': { name: 'Airbus A330 MRTT', icao24Prefixes: ['A333'] },
   
   // Transport Aircraft

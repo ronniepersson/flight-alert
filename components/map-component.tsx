@@ -19,8 +19,8 @@ interface MapComponentProps {
   onMapClick?: (lat: number, lon: number) => void;
   aircraft?: Array<{
     icao24: string;
-    latitude: number;
-    longitude: number;
+    latitude?: number;
+    longitude?: number;
     callsign?: string;
     altitude?: number;
   }>;
@@ -89,14 +89,16 @@ export default function MapComponent({ center, radius, onMapClick, aircraft = []
       />
       
       {/* Aircraft markers */}
-      {aircraft.map((plane) => (
-        <Marker
-          key={plane.icao24}
-          position={[plane.latitude, plane.longitude]}
-          icon={planeIcon}
-        >
-        </Marker>
-      ))}
+      {aircraft
+        .filter((plane) => plane.latitude && plane.longitude)
+        .map((plane) => (
+          <Marker
+            key={plane.icao24}
+            position={[plane.latitude!, plane.longitude!]}
+            icon={planeIcon}
+          >
+          </Marker>
+        ))}
     </MapContainer>
   );
 }
